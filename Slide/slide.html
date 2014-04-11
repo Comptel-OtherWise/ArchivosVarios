@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="js/bjqs-1.3.min.js"></script>
+<link rel="stylesheet" href="bjqs.css">
+
+</head>
+
+<body>
+<div id="banner_fade">
+  <ul class="bjqs">
+    <li><img src="img/banner01.jpg" width="620" height="310" /></li>
+    <li><img src="img/banner02.jpg" width="620" height="310" /></li>
+    <li><img src="img/banner03.jpg" width="620" height="310" /></li>
+  </ul>
+</div>
+
+ <p>&nbsp; </p>
+ <p>&nbsp;</p>
+ <div id="banner_slide">
+   <ul class="bjqs">
+     <li><img src="img/banner01.jpg" width="620" height="310" /></li>
+     <li><img src="img/banner02.jpg" width="620" height="310" /></li>
+     <li><img src="img/banner03.jpg" width="620" height="310" /></li>
+   </ul>
+  
+  
+ </div>
+ <p>&nbsp;</p>
+<script>
+        jQuery(document).ready(function($) {
+          
+          $('#banner_fade').bjqs({
+            animtype      : 'fade',
+            height        : 320,
+            width         : 620,
+            responsive    : true,
+			nexttext : 'Sig', // Text for 'next' button (can use HTML)
+            prevtext : 'Ant', // Text for 'previous' button (can use HTML)
+          });
+          
+        });
+      </script>
+      
+ <script>
+        jQuery(document).ready(function($) {
+          
+          $('#banner_slide').bjqs({
+            animtype      : 'slide',
+            height        : 320,
+            width         : 620,
+            responsive    : true,
+			nexttext : 'Siguiente', // Text for 'next' button (can use HTML)
+            prevtext : 'Anterior', // Text for 'previous' button (can use HTML)
+          });
+          
+        });
+      </script>
+</body>
+</html>
