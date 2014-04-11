@@ -1,9 +1,0 @@
-<form id="contacto" name="contacto" method="post" action="Php/enviar.php">
-													<div class="medidas"><label for="nombre" accesskey="n">Nombre: </label><input name="nombre" type="text" id="nombre" size="60" /></div>
-													<div class="medidas"><label for="empresa" accesskey="e">Empresa: </label><input name="empresa" type="text" id="empresa" size="60" /></div>
-													<div class="medidas"><label for="telefono" accesskey="t">Telefono: </label><input name="telefono" type="text" id="telefono" size="60" /></div>
-													<div class="medidas"><label for="mail" accesskey="m">E-mail: </label><input name="correo" type="text" id="correo" size="60" /></div>
-													<div class="medidas"><label for="asunto" accesskey="a">Asunto: </label><textarea name="mensaje" cols="42" rows="7" id="mensaje"></textarea></div>
-													<div class="enviar"><input name="button" type="submit" id="button" onClick="MM_validateForm('nombre','','R','telefono','','RisNum','correo','','NisEmail');return document.MM_returnValue" value="Enviar" />
-													</div>
-												</form>
